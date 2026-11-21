@@ -1,0 +1,24 @@
+:root { font-family: system-ui, sans-serif; color: #1f2937; background: #f3f4f6; }
+body { margin: 0; }
+.app { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
+header { display: flex; justify-content: space-between; align-items: center; }
+h1 { margin: 0 0 16px; } h2 { margin: 0 0 12px; font-size: 1.05rem; }
+.card { background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.row { display: flex; gap: 8px; margin-top: 8px; }
+input { flex: 1; padding: 10px; border: 1px solid #d1d5db; border-radius: 8px; }
+button { padding: 10px 14px; border: 0; border-radius: 8px; background: #4f46e5; color: #fff; cursor: pointer; }
+button.ghost { background: #e5e7eb; color: #374151; }
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+.tab { background: #e5e7eb; color: #374151; } .tab.active { background: #4f46e5; color: #fff; }
+.stats { display: flex; align-items: center; gap: 24px; }
+.stats div { display: flex; flex-direction: column; } .stats strong { font-size: 1.8rem; }
+.stats button { margin-left: auto; }
+.muted { color: #6b7280; }
+.dot { font-size: .85rem; color: #6b7280; } .dot::before { content: '●'; color: #ef4444; margin-right: 6px; }
+.dot.on::before { color: #22c55e; }
+.tickets { list-style: none; padding: 0; margin: 0; }
+.tickets li { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f1f5f9; }
+.who { flex: 1; } .actions { display: flex; gap: 6px; }
+.badge { font-size: .75rem; padding: 3px 8px; border-radius: 999px; background: #e5e7eb; }
+.status-called .badge { background: #fef3c7; } .status-served .badge { background: #d1fae5; }
+.status-cancelled { opacity: .5; }
